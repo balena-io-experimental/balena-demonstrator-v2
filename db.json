@@ -1,0 +1,83 @@
+{
+  "steps": [
+    {
+      "active": false,
+      "name": "start",
+      "h1": "Resin-Demonstrator v2",
+      "btn": "Start this",
+      "img": "resin-logo.png"
+    },
+    {
+      "active": false,
+      "name": "video",
+      "h1": "Here are our devices in our office in Seattle",
+      "btn": "next",
+      "msg": "let's update them!",
+      "vid": true
+    },
+    {
+      "active": false,
+      "name": "selector",
+      "h1": "Pick an Image",
+      "btn": "Select",
+      "selection": [
+        "diddyborg.png",
+        "SDKs.png",
+        "hackster.png"
+      ]
+    },
+    {
+      "active": true,
+      "name": "commit",
+      "h1": "Deploy with 2 commands",
+      "btn": "deploy",
+      "animatedText": [
+        "$ git commit -a -m 'init'",
+        "$ git push resin master"
+      ]
+    },
+    {
+      "active": false,
+      "name": "build",
+      "h1": "Resin builders are now building application for the target devices",
+      "btn": "next"
+    },
+    {
+      "active": false,
+      "name": "download",
+      "h1": "Your fleet's state is available via our dashboard and powerful API",
+      "btn": "next"
+    },
+    {
+      "active": false,
+      "name": "video2",
+      "h1": "",
+      "btn": "next",
+      "vid": true
+    },
+    {
+      "active": false,
+      "name": "success",
+      "h1": "",
+      "btn": "re-start",
+      "img": "highfive.gif",
+      "animatedText": [
+        "You just updated some devices in Seattle",
+        "Highfive!"
+      ]
+    }
+  ],
+  "global": {
+    "selected": {
+      "app": "pictureDemo",
+      "img": "hackster.png"
+    },
+    "resin": {
+      "app": "microBeast"
+    },
+    "pictureDemo": {
+      "name": "pictureDemo",
+      "remote": "git@github.com:craig-mulligan/simple-beast-fork.git"
+    }
+  }
+}

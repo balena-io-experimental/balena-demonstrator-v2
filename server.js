@@ -14,7 +14,7 @@ var resin = require("resin-sdk");
 const low = require('lowdb');
 const storage = require('lowdb/file-sync');
 
-const db = low('../db.json', { storage });
+const db = low('./db.json', { storage });
 
 app.use(express.static(__dirname + '/public'));
 app.use(term.middleware());
