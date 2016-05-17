@@ -1,0 +1,7 @@
+<h3> Gallery </h3>
+<div class="gallery row">
+  <div ng-repeat="g in gallery track by $index" class="col-sm-3">
+    <img ng-click="removeImage($index)" ng-src="/images/{{ g }}">
+    {{ g }}
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="form">
+    <fieldset class="form-group" ng-repeat="(key, value) in data track by $index">
+      <label for="formGroupExampleInput">{{ key }} <span class="meta">{{ checkType(data[key]) }}</span></label>
+      <!-- // steps input -->
+      <div class="col-lg-12" ng-switch on="checkType(data[key])">
+        <input ng-switch-when="string" ng-model="data[key]" type="text" class="form-control" data-ng-disabled="key == 'name'"/>
+        <input ng-switch-when="boolean" ng-model="data[key]" type="checkbox" class="form-control"/>
+        <div ng-switch-when="object">
+          <ul ng-if="settings == 'global'" ng-repeat="(k, v) in value">
+            <label for="formGroupExampleInput">{{ k }}</label>
+            <input type="text" class="form-control" ng-model="value[k]"name="{{ k }}" }}>
+          </ul>
+        </div>
+        <div ng-switch-when="array">
+          <input ng-repeat="item in data[key] track by $index" ng-model="data[key][$index]" type="text" class="form-control" data-ng-disabled="key == 'name'"/>
+        </div>
+       </div>
+    </fieldset>
+</div>

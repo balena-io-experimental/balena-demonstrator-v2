@@ -1,0 +1,27 @@
+<html ng-app="admin">
+  <head>
+    <link href="static/css/main.css" rel="stylesheet">
+  </head>
+  <body ng-controller="settingsCtrl" >
+      <div ng-show="saved" class="notification saved">Saved!</div>
+      <div class="container-fluid">
+          <h1>Settings</h1>
+          <div class="btn-group" role="group" aria-label="...">
+            <button ng-click="settings = 'global'" type="button" ng-class="settings == 'global' ? 'btn-primary' : 'btn-default'" class="btn ">Global</button>
+            <button ng-click="settings = 'steps'" type="button" ng-class="settings == 'steps' ? 'btn-primary' : 'btn-default'" class="btn ">Steps</button>
+          </div>
+          <resin-form></resin-form>
+          <button ng-click="save()" class="btn btn-primary btn-danger">save</button>
+          <resin-upload ng-show="settings == 'global'"></resin-upload>
+          <resin-gallery ng-show="settings == 'global'"></resin-gallery>
+          <button ng-show="settings == 'steps'" ng-click="next()" class="btn btn-primary btn-success">Next</button>
+
+      </div> <!-- container -->
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js" type="text/javascript"></script>
+    <script src="bower_components/ng-file-upload/ng-file-upload-all.js" type="text/javascript"></script>
+    <script src="admin.js"></script>
+    <script src="services.js"></script>
+  </body>
+</html>

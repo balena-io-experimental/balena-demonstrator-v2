@@ -1,0 +1,33 @@
+<html ng-app="myApp">
+  <head>
+    <link href="static/css/main.css" rel="stylesheet">
+    <!-- splash -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="static/js/typed.min.js"></script>
+    <!-- splash -->
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/term.js/src/term.js"></script>
+    <script type="text/javascript" src="bower_components/typed.js/dist/typed.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="mainCtrl">
+      <div ng-show="step" class="container-fluid">
+          <div class="wrapper">
+            <div class="view {{ step.name }}">
+              <h1>{{ step.h1 }}</h1>
+
+              <img ng-show='step.img' class="defualtImg" ng-src="images/{{ step.img }}">
+              <resin-selection ng-show="step.name == 'selector'"></resin-selection>
+              <resin-terminal ng-show="step.name == 'build'"></resin-terminal>
+              <resin-devices ng-show="step.name == 'download'"></resin-devices>
+              <resin-video ng-show="step.vid"></resin-video>
+
+              <p>{{ step.msg }}<p>
+              <h1 class="animation" ng-show="step.animatedText"><span class="element"></span></h1>
+              <button ng-click="next()" class="btn btn-primary btn-danger btn-next">{{ step.btn }}</button>
+            </div>
+          </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "term.js",
+  "description": "A terminal written in javascript",
+  "version": "0.0.7",
+  "main": "./src/term.js",
+  "dependencies": {},
+  "ignore": [
+    "example/*",
+    "lib/*",
+    "test/*",
+    "Makefile"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vahe/term.js.git"
+  },
+  "homepage": "https://github.com/vahe/term.js",
+  "_release": "0.0.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.7",
+    "commit": "70e77a2d74834a1be0dd2300884a023f7d246e8e"
+  },
+  "_source": "https://github.com/vahe/term.js.git",
+  "_target": "^0.0.7",
+  "_originalSource": "term.js",
+  "_direct": true
+}

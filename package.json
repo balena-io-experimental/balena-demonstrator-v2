@@ -1,0 +1,40 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application for giving resin demos",
+  "main": "main.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom/electron-quick-start.git"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start"
+  ],
+  "author": "GitHub",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atom/electron-quick-start/issues"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.15.0",
+    "chokidar": "^1.5.0",
+    "connect-multiparty": "^2.0.0",
+    "express": "^4.13.4",
+    "fs-extra": "^0.26.3",
+    "lowdb": "^0.12.5",
+    "pty.js": "^0.3.0",
+    "resin-sdk": "*",
+    "socket.io": "^1.4.5",
+    "term.js": "0.0.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
+}

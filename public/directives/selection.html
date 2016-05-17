@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-sm-4" ng-repeat="s in step.selection">
+    <div ng-class="selected == s ? 'active' : ''">
+      <img ng-click="select(s)" ng-src="images/{{ s }}"/>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <p>{{ selected }}</p>
+</div>

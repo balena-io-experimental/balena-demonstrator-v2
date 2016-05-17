@@ -1,0 +1,35 @@
+{
+  "name": "resin-demonstrator",
+  "description": "webapp for resin demos",
+  "main": "main.js",
+  "directory": "public/bower_components",
+  "authors": [
+    "craig-mulligan"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start"
+  ],
+  "homepage": "https://github.com/craig-mulligan/resin-demonstrator",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-schema-form": "^0.8.13",
+    "angular-ui-sortable": "^0.14.0",
+    "jquery-ui": "^1.11.4",
+    "bootstrap-sass": "^3.3.6",
+    "ng-file-upload": "^12.0.4",
+    "jquery": "^2.2.3",
+    "term.js": "^0.0.7",
+    "typed.js": "^1.1.1"
+  }
+}
