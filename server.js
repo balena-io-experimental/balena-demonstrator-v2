@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var server = require('http').createServer(app).listen(3000);
+var server = require('http').createServer(app).listen(80);
 var io = require('socket.io').listen(server);
 var term = require('term.js');
 var pty = require('pty.js');
@@ -112,7 +112,10 @@ io.on('connection', function(client) {
       command.on('data', function(data) {
         io.emit('ttyData', data);
       });
-
+	
+      command.on('error', function (err) {
+       console.log(err)
+      });
       command.on('exit', function () {
         io.emit('ttyExit', null);
       });

@@ -1,7 +1,7 @@
 var fs = require('fs-extra')
 var childProcess = require('child_process')
 var pty = require('pty.js')
-var resin = require("resin-sdk")
+var resin = require("resin-sdk")()
 var EventEmitter = require('events')
 
 module.exports = {
@@ -16,6 +16,7 @@ module.exports = {
     cb(db.object.global.selected);
   },
   push: function(db, script, selected) {
+    console.log(script, db.object.global.selected.app)
     return pty.spawn("bash", [script, db.object.global.selected.app, "init"], {
       name: 'xterm-color',
       cols: 80,

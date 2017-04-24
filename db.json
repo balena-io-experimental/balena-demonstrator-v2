@@ -3,8 +3,8 @@
     {
       "active": false,
       "name": "start",
-      "h1": "Resin-Demonstrator v2",
-      "btn": "Start this",
+      "h1": "Welcome to the resin-google demo!",
+      "btn": "Start this!",
       "img": "resin-logo.png"
     },
     {
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "active": false,
+      "active": true,
       "name": "build",
       "h1": "Resin builders are now building application for the target devices",
       "btn": "next"
@@ -70,10 +70,10 @@
   "global": {
     "selected": {
       "app": "pictureDemo",
-      "img": "hackster.png"
+      "img": "SDKs.png"
     },
     "resin": {
-      "app": "microBeast"
+      "app": "microBeastSeattle"
     },
     "pictureDemo": {
       "name": "pictureDemo",
