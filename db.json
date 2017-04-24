@@ -27,7 +27,7 @@
       ]
     },
     {
-      "active": true,
+      "active": false,
       "name": "commit",
       "h1": "Deploy with 2 commands",
       "btn": "deploy",
@@ -37,13 +37,13 @@
       ]
     },
     {
-      "active": true,
+      "active": false,
       "name": "build",
       "h1": "Resin builders are now building application for the target devices",
       "btn": "next"
     },
     {
-      "active": false,
+      "active": true,
       "name": "download",
       "h1": "Your fleet's state is available via our dashboard and powerful API",
       "btn": "next"
@@ -70,7 +70,7 @@
   "global": {
     "selected": {
       "app": "pictureDemo",
-      "img": "SDKs.png"
+      "img": "diddyborg.png"
     },
     "resin": {
       "app": "microBeastSeattle"
