@@ -4,7 +4,7 @@
       "active": false,
       "name": "start",
       "h1": "Welcome to the resin-google demo!",
-      "btn": "Start this!",
+      "btn": "Start!",
       "img": "resin-logo.png"
     },
     {
@@ -21,9 +21,9 @@
       "h1": "Pick an Image",
       "btn": "Select",
       "selection": [
-        "diddyborg.png",
-        "SDKs.png",
-        "hackster.png"
+        "resinio.png",
+        "google.png",
+        "resinOS.png"
       ]
     },
     {
@@ -70,7 +70,7 @@
   "global": {
     "selected": {
       "app": "pictureDemo",
-      "img": "diddyborg.png"
+      "img": "google.png"
     },
     "resin": {
       "app": "microBeastSeattle"
